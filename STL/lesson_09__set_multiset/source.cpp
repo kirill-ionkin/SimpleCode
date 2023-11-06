@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 #include <set> // needed include
+
+
 using namespace std;
 
 
@@ -110,8 +112,8 @@ int main()
 
 
     // так как могут быть дупликаты, то можно искать начало и конец  элементов
-    multiset<int>::iterator it1_begin = ms.lower_bound(1); // 1ая единица
-    multiset<int>::iterator it1_end = ms.upper_bound(1); // следующий элемент после последней единицы (учитывая упорядоченность элементов)
+    multiset<int>::iterator it1_begin = ms.lower_bound(1); // 1ая единица - указатель на неё
+    multiset<int>::iterator it1_end = ms.upper_bound(1); // следующий элемент после последней единицы (учитывая упорядоченность элементов) - указатель
     cout << "lower bound 1: " << *it1_begin << '\n';
     cout << "upper bound 1: " << *it1_end << '\n';
 
